@@ -1,0 +1,397 @@
+.container {
+  width: 650px;
+  /*border-style: solid;*/
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "pagos pagos pagos"
+    "venc venc venc";
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+/*Pago Info*/
+.containerP {
+  grid-area: pagos;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-areas:
+    "titulo titulo titulo"
+    ". pago ."
+    "contact . ."
+    "input input input"
+    "check email ."
+    ". enviar .";
+  padding-left: 10px;
+  padding-right: 10px;
+  grid-auto-columns: 210px;
+}
+
+.tituloa {
+  grid-area: titulo;
+  font-size: 14px;
+  margin-top: 7px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.sign {
+  /*
+  grid-area: sign;
+  color: #254e8b;
+  /*display: flex;
+  /*align-items: center;
+  /*justify-content: right;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  /*padding-left: 210px;
+  padding-top: 51px;
+  padding-left: 100%;
+  padding-top: 24%;
+  z-index: 2;*/
+}
+
+.pago {
+  grid-area: pago;
+  display: grid-flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: none;
+  outline: none;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.inpago {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  width: 140px;
+}
+
+.inpago::-webkit-inner-spin-button,
+.inpago::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact {
+  grid-area: contact;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input {
+  grid-area: input;
+  height: 36px;
+  margin-bottom: 25px;
+  border-style: solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 1px;
+  border-width: 1px;
+  padding-left: 12px;
+  border-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.valcontainer{
+  /*grid-area: val;*/
+  height: 36px;
+  position: relative;
+  top: 260px;
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.2);
+  width: 630px;
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-width: 1px;
+  justify-content: center;
+  color: rgba(128, 128, 128);
+}
+
+.valp {
+  margin: 0px;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(128, 128, 128);
+  
+}
+
+.input:hover{
+  border-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+.input:focus-visible {
+  outline: 0;
+  border: 1px solid #feb940;
+}
+
+
+/*.input::selection {
+  border-color: #feb940;
+  
+}*/
+
+.check {
+  display: flex;
+  align-items: center;
+  grid-area: check;
+  height: 48px;
+  width: 591px;
+  color: rgba(0, 0, 0, 0.38)
+}
+
+.email {
+  grid-area: email;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.checki {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.enviar {
+  grid-area: enviar;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  width: 300px;
+  border: none;
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0px 10px 0px;
+  margin-left: -45px;
+}
+
+/*Fin Pago Info*/
+
+/*Vencimientos*/
+.containerV {
+  grid-area: venc;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo titulo"
+    "venci . . ."
+    "fecha fecha . input" /*peru*/
+    "vencio . . ."
+    "fechao fechao . inputo" /*pero*/
+    "text text text text"
+    ". button button button";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titulo {
+  grid-area: titulo;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.venci {
+  grid-area: venci;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.fecha {
+  grid-area: fecha;
+  border-style: solid;
+  border-radius: 15px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 26px;
+  border-width: 1px;
+
+  text-rendering: auto;
+}
+
+.fecha:hover {
+  border-color: #feb940;
+}
+
+.fecha:focus-visible {
+  outline: 0;
+  border: 1px solid #feb940;
+}
+
+.inputu {
+  grid-area: input;
+  margin-bottom: 26px;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  width: 150px;
+  padding-left: 20px;
+}
+
+.inu {
+  width: 75px;
+  border: none;
+  outline: none;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  overflow: scroll;
+}
+
+.inu::-webkit-inner-spin-button,
+.inu::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.vencio {
+  grid-area: vencio;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.fechao {
+  grid-area: fechao;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.fechao:hover {
+  border-color: #feb940;
+}
+.fechao:focus-visible {
+  outline: 0;
+  border: 1px solid #feb940;
+}
+
+.inputo {
+  grid-area: inputo;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  width: 150px;
+  padding-left: 20px;
+}
+
+.in {
+  /*margin-bottom: 26px;*/
+  /*display: grid-flex;*/
+  /*display: inline-block;*/
+  /*justify-items: center;*/
+  width: 75px;
+  border: none;
+  outline: none;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+  /*padding-left: 20px;*/
+  /*margin-left: 30%;*/
+  overflow: scroll;
+}
+
+.in::-webkit-inner-spin-button,
+.in::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pero {
+  grid-area: pero;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+}
+
+.peru {
+  grid-area: peru;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #254e8b;
+}
+
+.text {
+  grid-area: text;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  width: 588px;
+  height: 126px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.text:hover {
+  border-color: #feb940;
+}
+
+.text:focus-visible {
+  outline: 0;
+  border: 1px solid #feb940;
+}
+
+.button {
+  grid-area: button;
+  display: flex;
+  background: linear-gradient(to right, #feb940, #fe6730);
+  border: none;
+  border-radius: 20px;
+  margin: 10px 10px 10px -20px;
+  padding: 10px;
+  width: 240px;
+  justify-content: center;
+  justify-items: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+}
+
+/*  text-decoration: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.1);
+  height: 37.2px;
+  width: 210px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;*/
+
+/*Fin Vencimientos*/
+

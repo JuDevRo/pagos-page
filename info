@@ -1,0 +1,21 @@
+<div>
+                <h6>Configurar vencimientos y cargos</h6>
+                <div>
+                    <label htmlFor="">Primer Vencimiento
+                        <input type="number" name="" id="" />
+                    </label>
+                    <label htmlFor="">
+                        <input type="number" name="" id="" />
+                    </label>
+                    <label htmlFor="">Segundo Vencimiento
+                        <input type="number" name="" id="" />
+                    </label>
+                    <label htmlFor="">
+                        <input type="number" name="" id="" />
+                    </label>
+                </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div>
+                    <button></button>
+                </div>
+            </div>

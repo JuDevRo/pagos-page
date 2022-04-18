@@ -1,0 +1,72 @@
+.c{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: inherit;
+}
+
+.container {
+  display: grid-flex;
+  
+  /*margin-left: 30%;*/
+  /*margin-top: 50px;*/
+  
+  /*width: 650px;*/
+}
+
+.containerH {
+  grid-area: header;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: grid;
+  background: linear-gradient(to right, #feb940, #fe6730);
+  grid-template-areas:
+    "header header header "
+    "servic items . ";
+  padding-left: 17px;
+  padding-right: 10px;
+  grid-auto-columns: 130px;
+  width: 623px;
+}
+
+.h1 {
+  grid-area: header;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: #f6f7f9;
+}
+
+.servicbutton {
+  color: inherit;
+  background-color: white;
+  grid-area: servic;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-indent: 0px;
+  box-shadow: -2px -5px 5px 1px rgb(0 0 0 / 20%), 0px -2px 1px 0px rgb(0 0 0 / 14%);;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.items {
+  grid-area: items;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  margin-left: -15px;
+  color: #0000008a;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
